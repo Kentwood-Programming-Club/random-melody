@@ -1,5 +1,7 @@
 from constants import notes
-
+import random
 def randomNote():
     # Implement this
-    pass
+    note_name = notes[random.randint(0,len(notes))]
+    rhythm = str(2 ** (random.randint(1,4)))
+    return None # what should we return?
