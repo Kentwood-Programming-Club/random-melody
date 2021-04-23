@@ -1,6 +1,4 @@
 from music21 import *
-import random
-
 # Before you copy this for filling out the constants.py file, 
 # consider if you really want to use EVERY note in the chromatic scale.
 notes=[ 
@@ -31,4 +29,5 @@ def scaleFromTonic(note, steps, note_type):
         count += s
     return scale
 
-converter.parse("tinynotation: 4/4 " + " ".join(scaleFromTonic("c", major_steps, 4))).show()
+if __name__=="__main__":
+    converter.parse("tinynotation: 4/4 " + " ".join(scaleFromTonic("c", major_steps, 4))).show()
